@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Survey Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 650px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    margin-top: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Music Survey Form</h1>
+
+<form action="http://www.uyar.com/teaching/ecc006/2017spring/login.php" method="post">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email">
+
+<label for="comments">Tell us about your favorite music:</label>
+<textarea id="comments" name="comments" cols="60" rows="3"></textarea>
+
+<fieldset>
+    <legend>Favorite Music Genre</legend>
+
+    <input type="radio" id="pop" name="genre" value="Pop">
+    <label for="pop">Pop</label>
+
+    <input type="radio" id="rock" name="genre" value="Rock">
+    <label for="rock">Rock</label>
+
+    <input type="radio" id="hiphop" name="genre" value="Hip Hop">
+    <label for="hiphop">Hip Hop</label>
+</fieldset>
+
+<fieldset>
+    <legend>Music Activities</legend>
+
+    <input type="checkbox" id="streaming" name="activity" value="Streaming">
+    <label for="streaming">Streaming Music</label>
+
+    <input type="checkbox" id="concerts" name="activity" value="Concerts">
+    <label for="concerts">Attending Concerts</label>
+
+    <input type="checkbox" id="collecting" name="activity" value="Collecting">
+    <label for="collecting">Collecting Albums</label>
+</fieldset>
+
+<label for="artist">Favorite Artist</label>
+
+<select id="artist" name="artist" size="3">
+    <option>Drake</option>
+    <option>Taylor Swift</option>
+    <option>Ed Sheeran</option>
+    <option>Billie Eilish</option>
+</select>
+
+<div class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+
+</form>
+
+</body>
+</html>
